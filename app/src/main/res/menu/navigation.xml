@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dash"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/new_entry"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        android:title="New entry" />
+    <item
+        android:id="@+id/navigation_list"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="@string/client_list" />
+
+
+
+</menu>

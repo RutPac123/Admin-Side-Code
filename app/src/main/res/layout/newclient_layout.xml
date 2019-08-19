@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Enter Account Number..."
+                android:inputType="number"
+                android:id="@+id/cAcNo"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_below="@id/cAcNo"
+                android:hint="Enter Client's Name..."
+                android:id="@+id/cName"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_below="@id/cName"
+                android:hint="Enter Studio's Name..."
+                android:id="@+id/studioName"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/cAcNo"
+                android:id="@+id/okBtn"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cName"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:visibility="invisible"
+                android:id="@+id/searchList"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Enter Project's description..."
+                android:id="@+id/cDesc"
+                android:layout_below="@id/studioName"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/studioName"
+                android:id="@+id/okBtn2"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cDesc"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:visibility="invisible"
+                android:id="@+id/searchList2"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Enter Party Name..."
+                android:id="@+id/pName"
+                android:layout_below="@id/cDesc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the event date : "
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/pName"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:id="@+id/mDate"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datetxt"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="monospace"
+                android:layout_below="@+id/mDate"
+                />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Open Calender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/datetxt"
+                android:autoSizeMaxTextSize="20dp"
+                android:textColor="#fff"
+                android:background="@drawable/gradient"
+                android:id="@+id/opnCalBtn"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vidstattxt"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/opnCalBtn"
+                android:text="Have Video data ?"
+
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vidstattxt"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mSpinVideo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titeltxt"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/mSpinVideo"
+                android:text="Have Title data ?"
+
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titeltxt"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mSpinTitle"/>
+
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Save and proceed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mSpinTitle"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:background="#0d98ba"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/btnSave"/>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

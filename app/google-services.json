@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "817284866924",
+    "firebase_url": "https://adminside2.firebaseio.com",
+    "project_id": "adminside2",
+    "storage_bucket": "adminside2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817284866924:android:b688d38029878f3e",
+        "android_client_info": {
+          "package_name": "com.example.adminside"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817284866924-93vgecqrvjvbludhkkonojc0d30j1qgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adminside",
+            "certificate_hash": "ea44b606af3ddebc13429d58b0193cbae6e04f98"
+          }
+        },
+        {
+          "client_id": "817284866924-la97a7maksil0pe370bcqqi5jibhijr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWhzO41vpXOsaD2fiGxhazSH_B0Z4LcWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817284866924-la97a7maksil0pe370bcqqi5jibhijr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

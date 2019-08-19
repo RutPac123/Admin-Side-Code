@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".activities.NewProjectData">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter quantity : "
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:id="@+id/quantxt"/>
+    <EditText
+        android:layout_width="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/quantxt"
+        android:id="@+id/quant"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Delivery to.."
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantxt"
+        android:id="@+id/delito"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter Amount.."
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delito"
+        android:id="@+id/amnt"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Discount (if any) in percentage eg. 2%"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amnt"
+        android:id="@+id/discnt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any difficuties in the project ?"
+        android:textSize="20sp"
+        android:layout_below="@id/discnt"
+        android:layout_margin="20dp"
+        android:id="@+id/difftxt"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter difficulties (if any)"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/difftxt"
+        android:id="@+id/diff"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save data!"
+        android:layout_below="@id/diff"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#26ae60"
+        android:textColor="#fff"
+        android:id="@+id/saveAllDataBtn"/>
+</RelativeLayout>

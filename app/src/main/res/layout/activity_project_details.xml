@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProjectDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Status : "
+            android:textSize="20sp"
+            android:textColor="#2ecc72"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/statustxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FF3E4D"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/statustxt"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/mStatus"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Id : "
+            android:textSize="20sp"
+            android:layout_below="@+id/statustxt"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            android:id="@+id/myprojId"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:id="@+id/id"
+            android:layout_below="@id/mStatus"
+            android:layout_toRightOf="@+id/myprojId"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party Name : "
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            android:layout_below="@id/myprojId"
+            android:id="@+id/mypartyname"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:id="@+id/myCname"
+            android:hint="Party name"
+            android:layout_below="@id/id"
+            android:layout_toRightOf="@+id/mypartyname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A/C Number : "
+            android:textSize="20sp"
+            android:layout_below="@+id/mypartyname"
+            android:id="@+id/accnotxt"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/myaccno"
+            android:hint="Acc no.."
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/accnotxt"
+            android:layout_below="@+id/myCname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Description : "
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:id="@+id/projDesc"
+            android:layout_below="@+id/accnotxt"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projDesc"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:hint="project description.."
+            android:id="@+id/myPDesc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Booking : "
+            android:layout_below="@id/myPDesc"
+            android:layout_margin="20dp"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/mdatetxt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPDesc"
+            android:layout_toRightOf="@+id/mdatetxt"
+            android:textSize="18sp"
+            android:layout_marginTop="22dp"
+            android:id="@+id/myDateBook"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Completion :"
+            android:textStyle="bold"
+            android:textColor="#3498DB"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mdatetxt"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/mdateComtxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myDateBook"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/mdateComtxt"
+            android:layout_marginTop="40dp"
+            android:id="@+id/comdatetxt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Delivery :"
+            android:textStyle="bold"
+            android:textColor="#3498DB"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/mdateComtxt"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/mdateDel"/>
+
+        <TextView
+            android:id="@+id/deldatetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mdateDel"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="-27dp"
+            android:layout_toEndOf="@+id/mdateDel"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deliver to : "
+            android:textSize="20sp"
+            android:layout_below="@+id/deldatetxt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            android:id="@+id/deltotxt"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="address..."
+            android:layout_below="@id/deldatetxt"
+            android:layout_toRightOf="@id/deltotxt"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:id="@+id/deliveryto"/>
+
+        <TextView
+            android:id="@+id/changestatustxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deltotxt"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Change the status : "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#8B78E6"
+            tools:fontFamily="@font/amaranth" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deliveryto"
+            android:layout_toRightOf="@+id/changestatustxt"
+            android:id="@+id/mSpinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Has Video data ? : "
+            android:textSize="20sp"
+            android:layout_below="@id/mSpinner"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/hasvtxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes/No"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@id/mSpinner"
+            android:layout_toRightOf="@id/hasvtxt"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/videodata"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mSpinner"
+            android:layout_toRightOf="@id/videodata"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mSpinnervid"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Has Title data ? : "
+            android:textSize="20sp"
+            android:layout_below="@id/hasvtxt"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/hasTtxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes/No"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@id/videodata"
+            android:layout_toRightOf="@id/hasvtxt"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titledata"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mSpinnervid"
+            android:layout_toRightOf="@id/titledata"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mSpinnertit"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any difficulties ? : "
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@id/titledata"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/difftxt"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Difficulties.."
+            android:layout_below="@id/titledata"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/difftxt"
+            android:id="@+id/diff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"
+            android:layout_below="@+id/difftxt"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount : "
+            android:textSize="20sp"
+            android:layout_below="@id/difftxt"
+            android:layout_marginTop="45dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/amnttxt"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="eg. 2000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@id/diff"
+            android:layout_toRightOf="@id/amnttxt"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/amount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/amnttxt"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/quantxt"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="eg. 2"
+            android:layout_below="@id/amount"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/quantxt"
+            android:textSize="20sp"
+            android:id="@+id/quantity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount (if any) : "
+            android:textSize="20sp"
+            android:layout_below="@id/quantxt"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/distxt"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="eg. 2 %"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@id/quantity"
+            android:layout_toRightOf="@id/amnttxt"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="#EC4849"
+            android:id="@+id/discount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount : "
+            android:textSize="22sp"
+            android:layout_below="@id/distxt"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tottxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 1800"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/discount"
+            android:layout_toRightOf="@id/amnttxt"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="#43BE31"
+            android:id="@+id/total"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_below="@id/total"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/saveDataBtn"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_btn"
+            android:layout_marginBottom="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>

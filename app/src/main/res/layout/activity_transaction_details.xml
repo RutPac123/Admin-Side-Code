@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TransactionDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction Details :"
+        android:textSize="20sp"
+        android:fontFamily="@font/amaranth"
+        android:id="@+id/transtxt"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:background="#DAE0E2"
+        android:alpha="0.3"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallClipRotatePulseIndicator"
+        android:id="@+id/loader"
+        android:layout_centerInParent="true"
+        app:indicatorColor="#30336B"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transList"
+        android:layout_below="@id/transtxt"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total projects : "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:layout_margin="30dp"
+            android:id="@+id/totaltxt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="0"
+            android:textColor="#FF3E4D"
+            android:fontFamily="@font/amaranth"
+            android:layout_margin="30dp"
+            android:layout_toRightOf="@id/totaltxt"
+            android:id="@+id/totalProj"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects In Progress : "
+            android:layout_below="@id/totaltxt"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/amaranth"
+            android:id="@+id/projprogtxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="0"
+            android:textColor="#3C40C6"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/totalProj"
+            android:layout_toRightOf="@id/projprogtxt"
+            android:id="@+id/progressproj"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects Completed : "
+            android:layout_below="@id/projprogtxt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/amaranth"
+            android:id="@+id/completetxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="#43BE31"
+            android:layout_below="@id/progressproj"
+            android:layout_toRightOf="@id/projprogtxt"
+            android:id="@+id/projCompl"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:indicatorName="BallClipRotatePulseIndicator"
+            android:id="@+id/loader"
+            android:layout_marginTop="350dp"
+            android:layout_centerHorizontal="true"
+            app:indicatorColor="#30336B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects Delivered : "
+            android:layout_below="@id/projCompl"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/amaranth"
+            android:id="@+id/delitxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="#BB2CD9"
+            android:layout_below="@id/projCompl"
+            android:layout_toRightOf="@id/projprogtxt"
+            android:id="@+id/projDel"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#2ecc72"
+            android:layout_below="@id/projDel"
+            android:layout_margin="20dp"
+            android:id="@+id/mView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects in Progress -> "
+            android:layout_below="@id/mView"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/title"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/title"
+                    android:id="@+id/proglist"/>
+            </android.support.design.widget.CoordinatorLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</com.baoyz.widget.PullRefreshLayout>
